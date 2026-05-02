@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreePrompt - High-Quality AI Agent Prompts</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <span class="gradient-text">FreePrompt</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="coding.html">Coding</a>
+        <a href="writing.html">Writing</a>
+        <a href="business.html">Business</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Build Better AI Agents<br>with <span class="gradient-text">Pro Prompts</span></h1>
+      <p>Stop guessing. Start building. FreePrompt provides meticulously crafted, structurally sound prompts designed to turn generic LLMs into highly specialized, reliable AI agents.</p>
+      <div style="display: flex; gap: 16px; justify-content: center;">
+        <a href="#categories" class="btn btn-primary">Browse Categories <i data-lucide="arrow-right"></i></a>
+        <a href="coding.html" class="btn btn-secondary">View Code Agents</a>
+      </div>
+    </section>
+
+    <section id="categories" class="container prompt-section">
+      <div class="section-header text-center" style="text-align: center;">
+        <h2>Agent Categories</h2>
+        <p>Select a domain to find specialized agent prompts</p>
+      </div>
+
+      <div class="grid">
+        <!-- Category: Coding -->
+        <a href="coding.html" class="card">
+          <div class="card-icon">
+            <i data-lucide="code-2"></i>
+          </div>
+          <h3>Software Engineering</h3>
+          <p>Prompts for code reviewers, debuggers, pair programmers, and architecture consultants.</p>
+          <div class="card-actions" style="margin-top: auto; border-top: none; padding-top: 0; justify-content: flex-start;">
+            <span style="color: var(--accent-primary); font-weight: 500; font-size: 0.9rem;">Explore Prompts &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Category: Writing -->
+        <a href="writing.html" class="card">
+          <div class="card-icon">
+            <i data-lucide="pen-tool"></i>
+          </div>
+          <h3>Content & Writing</h3>
+          <p>Agents specialized in SEO copywriting, technical documentation, editing, and creative writing.</p>
+          <div class="card-actions" style="margin-top: auto; border-top: none; padding-top: 0; justify-content: flex-start;">
+            <span style="color: var(--accent-primary); font-weight: 500; font-size: 0.9rem;">Explore Prompts &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Category: Business -->
+        <a href="business.html" class="card">
+          <div class="card-icon">
+            <i data-lucide="briefcase"></i>
+          </div>
+          <h3>Business & Support</h3>
+          <p>Automate workflows with customer support agents, data analysts, and HR assistants.</p>
+          <div class="card-actions" style="margin-top: auto; border-top: none; padding-top: 0; justify-content: flex-start;">
+            <span style="color: var(--accent-primary); font-weight: 500; font-size: 0.9rem;">Explore Prompts &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing Agents - FreePrompt</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html"><span class="gradient-text">FreePrompt</span></a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="coding.html">Coding</a>
+        <a href="writing.html" class="active">Writing</a>
+        <a href="business.html">Business</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container prompt-section">
+      <div class="section-header">
+        <h2>Content & Writing Agents</h2>
+        <p>Prompts for SEO copywriting, technical documentation, and creative writing.</p>
+      </div>
+
+      <div class="grid">
+        
+        <!-- Prompt 1 -->
+        <div class="card prompt-card">
+          <span class="badge">SEO</span>
+          <h3>SEO Content Optimizer</h3>
+          <p>An agent built to rewrite existing articles to rank higher on search engines without sounding robotic.</p>
+          
+          <div class="prompt-detail">
+            <div class="prompt-part">
+              <h4>Role</h4>
+              <p>You are a highly sought-after SEO Copywriter and Editor who specializes in organic search ranking and human-centric writing.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Context</h4>
+              <p>The user will provide a draft article and a list of target keywords.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Core Task</h4>
+              <p>Rewrite the article to naturally incorporate the target keywords. Improve readability, add compelling subheadings (H2, H3), and write a high-converting meta description.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Constraints</h4>
+              <ul>
+                <li>Never keyword stuff. If a keyword doesn't fit naturally, leave it out.</li>
+                <li>Maintain a conversational, engaging tone. Avoid generic AI jargon like "In today's fast-paced digital world".</li>
+              </ul>
+            </div>
+            <div class="prompt-part">
+              <h4>Output Requirements</h4>
+              <p>Return the optimized article in Markdown. Include a section at the top titled "SEO Metadata" containing the proposed Title Tag and Meta Description.</p>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-secondary copy-btn"><i data-lucide="copy"></i> Copy Prompt</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

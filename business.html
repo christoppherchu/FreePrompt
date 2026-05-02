@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Agents - FreePrompt</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html"><span class="gradient-text">FreePrompt</span></a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="coding.html">Coding</a>
+        <a href="writing.html">Writing</a>
+        <a href="business.html" class="active">Business</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container prompt-section">
+      <div class="section-header">
+        <h2>Business & Support Agents</h2>
+        <p>Streamline operations with prompts for data analysis, customer support, and strategy.</p>
+      </div>
+
+      <div class="grid">
+        
+        <!-- Prompt 1 -->
+        <div class="card prompt-card">
+          <span class="badge">Operations</span>
+          <h3>Invoice Exception Agent</h3>
+          <p>An agent designed to parse financial documents and flag irregularities based on strict business rules.</p>
+          
+          <div class="prompt-detail">
+            <div class="prompt-part">
+              <h4>Role</h4>
+              <p>You are an AI agent in an Accounts Payable workflow with extreme attention to detail.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Core Task</h4>
+              <p>Analyze the provided invoice data against the purchase order (PO) data. Identify exceptions and recommend the next action.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Constraints</h4>
+              <ul>
+                <li>Flag an exception if the invoice exceeds the PO amount by more than 5%.</li>
+                <li>Flag an exception if the vendor is not on the approved vendor list.</li>
+                <li>Never approve payment on exceptions. Always recommend escalation to human review.</li>
+              </ul>
+            </div>
+            <div class="prompt-part">
+              <h4>Error Handling</h4>
+              <p>If the provided data is unreadable or missing key fields (like Total Amount or Vendor Name), output an error state requesting a clearer scan.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Output Requirements</h4>
+              <p>Provide a strict JSON object with exactly these keys: `{"exception_type": "string or null", "recommended_action": "string", "reasoning": "string"}`. Do not output any markdown formatting around the JSON.</p>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-secondary copy-btn"><i data-lucide="copy"></i> Copy Prompt</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
