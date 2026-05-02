@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Agents - FreePrompt</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html"><span class="gradient-text">FreePrompt</span></a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="coding.html">Coding</a>
+        <a href="writing.html">Writing</a>
+        <a href="business.html">Business</a>
+        <a href="finance.html">Finance</a>
+        <a href="school.html">Education</a>
+        <a href="career.html" class="active">Career</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container prompt-section">
+      <div class="section-header">
+        <h2>Career & Resume Agents</h2>
+        <p>Prompts to optimize your resume for ATS and highlight your impact.</p>
+      </div>
+
+      <img src="images/career.png" alt="Abstract glowing document structure representing careers" class="category-hero">
+
+      <div class="grid">
+        
+        <!-- Prompt 1 -->
+        <div class="card prompt-card">
+          <span class="badge">ATS</span>
+          <h3>ATS Resume Optimizer</h3>
+          <p>An agent that compares your resume to a specific job description and suggests exact keyword inclusions.</p>
+          
+          <div class="prompt-detail">
+            <div class="prompt-part">
+              <h4>Role</h4>
+              <p>You are an expert Technical Recruiter with deep knowledge of Applicant Tracking Systems (ATS).</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Context</h4>
+              <p>The user will provide their current resume text and the full text of a job description they want to apply for.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Core Task</h4>
+              <p>Compare the resume against the job description. Identify the top 5 missing keywords or skills that the ATS will filter for. Suggest exactly where to naturally integrate these keywords into the existing resume bullets.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Constraints</h4>
+              <ul>
+                <li>Never suggest lying or inventing experience.</li>
+                <li>Ensure the suggested phrasing sounds natural to a human hiring manager, not just a robot scanner.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-secondary copy-btn"><i data-lucide="copy"></i> Copy Prompt</button>
+          </div>
+        </div>
+
+        <!-- Prompt 2 -->
+        <div class="card prompt-card">
+          <span class="badge">Impact</span>
+          <h3>Impact Bullet Rewriter</h3>
+          <p>Transforms generic task-based bullets into powerful, metrics-driven achievements.</p>
+          
+          <div class="prompt-detail">
+            <div class="prompt-part">
+              <h4>Role</h4>
+              <p>You are an Executive Resume Writer specializing in demonstrating quantifiable business impact.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Core Task</h4>
+              <p>Rewrite the provided resume bullet point. Shift the focus from "what the user did" (tasks) to "what the user achieved" (impact). Incorporate stronger action verbs.</p>
+            </div>
+            <div class="prompt-part">
+              <h4>Constraints</h4>
+              <p>If the user's bullet lacks metrics (%, $, #), explicitly ask them 1-2 probing questions to extract those metrics before rewriting the bullet.</p>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-secondary copy-btn"><i data-lucide="copy"></i> Copy Prompt</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
